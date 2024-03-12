@@ -1,0 +1,205 @@
+/* CSS RESET */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, p, ul, li, a {
+	margin: 0px;
+	padding: 0px;
+    font-weight: normal;
+}
+
+body {
+	font-family: "Nunito", Helvetica, Arial, sans-serif;
+	color: #222222;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+    height: auto;
+}
+
+
+/* 	BODY */
+
+body {
+	background-color: #EFEFEF;
+	font-family: 'Poppins', sans-serif;
+
+	width: 750px;
+	margin: auto;
+}
+
+
+/* 	HEADER */
+
+body::before {
+	content: '';
+	width: 100%;
+	height: 400px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: #535971;
+}
+
+
+.header {
+	margin-top: 140px;
+}
+
+.header h1 {
+	color: #FFF;
+	font-family: Staatliches;
+	font-size: 48px;
+	font-weight: 400;
+
+	margin-bottom: 12px;
+}
+
+.header p {
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 200;
+
+	margin-bottom: 58px;
+}
+
+/* 	FORM */
+
+form {
+	width: 750px;
+	height: 1084px;
+	gap: 30px;
+	padding: 64px;
+
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 20px 20px 0px 0px;
+	background: #FFF;
+}
+
+fieldset {
+	border: none;
+}
+
+.fieldset-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+  }
+
+fieldset legend {
+	font-family: Staatliches, sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 34px;
+	color: #535971;
+  
+	width: 100%;
+  
+	border-bottom: 1px solid #E6E6F0;
+	padding-bottom: 16px;
+}
+
+.input-wrapper input {
+	display: flex;
+  	flex-direction: column;
+
+	margin-bottom: 24px;
+	min-width: 622px;
+}
+
+.col-2 {
+	display: flex;
+	gap: 22px;
+}
+
+.col-2 input {
+	min-width: 300px;
+}
+
+.input-wrapper label {
+	font-size: 14px;
+	line-height: 24px;
+	color: #4E4958;
+
+}
+
+.input-wrapper textarea {
+	padding: 0px;
+	height: 168px;
+}
+
+.input-wrapper label span {
+	margin-left: 12px;
+  
+	font-family: Poppins;
+	font-size: 12px;
+	line-height: 20px;
+	
+	color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+	color: #6c6a71;
+}
+
+.input-wrapper input, .input-wrapper textarea {
+	background: #FAFAFC;
+  
+	border: 1px solid #E6E6F0;
+	border-radius: 8px;
+	
+	height: 56px;
+  
+	padding: 0 24px;
+  
+	font-size: 16px;
+	line-height: 26px;
+  
+	color: #E6E6F0;
+}
+
+.fieldset-wrapper h2 {
+	color: #535971;
+
+	font-family: Staatliches;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 34px;
+
+	padding-bottom: 8px;
+}
+
+.prime-mentor, .sec-mentor {
+	display: flex;
+  	gap: 10px;
+}
+
+.prime-menthor .input-wrapper:nth-child(3) {
+	margin-left: 22px;
+}

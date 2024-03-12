@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+</head>
+<body>
+   <div class="page">
+      <header class="header">
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para <br>agendar a sua mentoria</p>
+      </header>
+      
+    
+      <form action="form-mentoria">
+        <!-- Informações pessoais -->
+        <fieldset>
+            <!-- Campos com colunas de informações pessoais -->
+            <section class="fieldset-wrapper">
+                <legend>Informações pessoais</legend>
+                <div class="input-wrapper">
+                <div class="col-2">
+                    <div>
+                        <label for="event-name">Nome</label>
+                        <input type="text" id="name" required minlength="4">  
+                    </div>
+                    <div>
+                        <label for="event-lastname">Sobre nome</label>
+                        <input type="text" id="lastname" required minlength="4"> 
+                    </div>
+                </div>
+                 <!-- Outros campos de informações pessoais-->
+                <div>
+                    <label for="event-email">E-mail<span>(digite um e-mail válido)</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="event-password">Senha<span>(mínimo de 6 caracteres)</span></label>
+                    <input type="password" id="password" required>
+                </div>
+                </div>
+        </fieldset>
+
+        <!-- Informações do mentor -->
+        <fieldset>
+            <section class="fieldset-wrapper">
+                <legend>Informações do mentor</legend>
+                <div class="input-wrapper">
+                    <div>
+                        <label for="event-mentorname">Nome do seu mentor<span>(só o primeiro nome)</span></label>
+                        <input type="text" id="mentorname" required minlength="4">
+                    </div>
+                </div>
+                
+            </section>
+        </fieldset>
+
+        <!-- Horários disponíveis -->
+        <fieldset>
+            <section class="fieldset-wrapper">
+                <legend>Seus horários disponíveis</legend>
+                <div class="input-wrapper">
+                        <!-- Coluna primeira mentoria -->
+                        <div>
+                        <h2>Primeira mentoria</h2>
+                        <div class="prime-mentor">
+                            <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="date" required>
+
+                            <label for="event-start">Das</label>
+                            <input type="time" id="start" required>
+                            
+                            <label for="event-date">Até</label>
+                            <input type="time" id="end" required>
+                        </div>
+                    </div>
+
+                        <!-- Coluna seg mentoria -->
+                        <div>
+                            <h2>Segunda mentoria</h2>
+                            <div class="sec-mentor">
+                            <label for="event-date">Data<span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="date" required>
+
+                            <label for="event-start">Das</label>
+                            <input type="time" id="start" required>
+                            
+                            <label for="event-date">Até</label>
+                            <input type="time" id="end" required>
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+        </fieldset>
+
+        <!-- Salvar informações do formulário -->
+        <fieldset>
+            <section class="submit">
+                <input type="submit" id="form-mentoria" value="Salvar">
+            </section>
+        </fieldset>
+      </form>
+    </section>
+   </div> 
+</body>
+</html>
